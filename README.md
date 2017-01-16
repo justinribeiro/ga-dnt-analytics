@@ -29,7 +29,7 @@ bower install ga-dnt-analytics --save
     ```html
     <ga-dnt-analytics key="UA-XXXXXX-X"></ga-dnt-analytics>
     ```
-  ```
+
 
 ## Attributes/Properties
 
