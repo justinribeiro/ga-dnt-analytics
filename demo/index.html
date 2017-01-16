@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>ga-dnt-analytics demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../ga-dnt-analytics.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+    </style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic ga-dnt-analytics demo</h3>
+      <demo-snippet>
+        <template>
+          <ga-dnt-analytics key="UA-XXXXX-X"></ga-dnt-analytics>
+        </template>
+      </demo-snippet>
+
+      <h3>Always send pageview on element stamp</h3>
+      <demo-snippet>
+        <template>
+          <ga-dnt-analytics key="UA-XXXXX-X" pageview="true"></ga-dnt-analytics>
+        </template>
+      </demo-snippet>
+
+      <h3>Disable Do Not Track check</h3>
+      <demo-snippet>
+        <template>
+          <ga-dnt-analytics key="UA-XXXXX-X" donottrack="false"></ga-dnt-analytics>
+        </template>
+      </demo-snippet>
+
+      <h3>Enable debugging</h3>
+      <demo-snippet>
+        <template>
+          <ga-dnt-analytics debug="true"></ga-dnt-analytics>
+        </template>
+      </demo-snippet>
+
+      <h3>Enable debugging with tracing (perf overhead)</h3>
+      <demo-snippet>
+        <template>
+          <ga-dnt-analytics debug="true" trace="true"></ga-dnt-analytics>
+        </template>
+      </demo-snippet>
+
+    </div>
+  </body>
+</html>
