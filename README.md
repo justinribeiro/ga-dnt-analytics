@@ -1,6 +1,7 @@
 # \<ga-dnt-analytics\>
 
-Basic Google Analytics web component with Do Not Track support.
+Basic Google Analytics web component with Do Not Track support. [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/owner/my-element)
+
 
 <!---
 ```
