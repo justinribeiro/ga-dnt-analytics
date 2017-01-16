@@ -6,8 +6,8 @@ Basic Google Analytics web component with Do Not Track support.
 
 Install the component using Bower:
 
-```
-bower install ga-dnt-analytics --save
+```shell
+bower i justinribeiro/ga-dnt-analytics --save
 ```
 
 ## Usage
@@ -45,7 +45,7 @@ Attribute | Options      | Default  | Description
 
 If not using the `pageview` property to send a ping to GA, you can use the `send()` method to send a payload to GA.
 
-```
+```javascript
 // via Polymer 1.x
 this.$$('blog-analytics').send({
   hitType: 'pageview',
