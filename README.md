@@ -2,6 +2,24 @@
 
 Basic Google Analytics web component with Do Not Track support.
 
+<!---
+```
+<custom-element-demo>
+  <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="ga-dnt-analytics.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<ga-dnt-analytics debug="true"></ga-dnt-analytics>
+ga-dnt-analytics - Open DevTools and check console.
+```
+
+![image](https://cloud.githubusercontent.com/assets/643503/22002837/e9e55dd8-dc03-11e6-8f3b-147be85ae76f.png)
+
 ## Installation
 
 Install the component using Bower:
