@@ -1,6 +1,6 @@
 # \<ga-dnt-analytics\>
 
-Basic Google Analytics web component with Do Not Track support. [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/owner/my-element)
+Basic Google Analytics web component with Do Not Track support. [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/justinribeiro/ga-dnt-analytics)
 
 
 <!---
@@ -34,7 +34,7 @@ bower i justinribeiro/ga-dnt-analytics --save
 1. Import Web Components' polyfill, if needed:
 
     ```html
-    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
     ```
 
 2. Import ga-dnt-analytics:
@@ -65,8 +65,8 @@ Attribute | Options      | Default  | Description
 If not using the `pageview` property to send a ping to GA, you can use the `send()` method to send a payload to GA.
 
 ```javascript
-// via Polymer 1.x
-this.$$('blog-analytics').send({
+// via Polymer 2.x
+this.$$('ga-dnt-analytics').send({
   hitType: 'pageview',
   page: window.location.pathname,
   location: window.location.href,
@@ -74,7 +74,7 @@ this.$$('blog-analytics').send({
 });
 
 // via JavaScript
-document.querySelector('blog-analytics').send({
+document.querySelector('ga-dnt-analytics').send({
   hitType: 'pageview',
   page: window.location.pathname,
   location: window.location.href,
@@ -82,7 +82,7 @@ document.querySelector('blog-analytics').send({
 });
 ```
 
-For list of payloads and string/objects to send, see [See https://developers.google.com/analytics/devguides/collection/analyticsjs/sending-hits](See https://developers.google.com/analytics/devguides/collection/analyticsjs/sending-hits).
+For list of payloads and string/objects to send, see [See https://developers.google.com/analytics/devguides/collection/analyticsjs/sending-hits](https://developers.google.com/analytics/devguides/collection/analyticsjs/sending-hits).
 
 ## Contributing
 
