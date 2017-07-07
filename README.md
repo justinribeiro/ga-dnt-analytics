@@ -66,6 +66,14 @@ If not using the `pageview` property to send a ping to GA, you can use the `send
 
 ```javascript
 // via Polymer 2.x
+this.shadowRoot.querySelector('ga-dnt-analytics').send({
+  hitType: 'pageview',
+  page: window.location.pathname,
+  location: window.location.href,
+  title: 'My Title'
+});
+
+// via Polymer 1.x
 this.$$('ga-dnt-analytics').send({
   hitType: 'pageview',
   page: window.location.pathname,
